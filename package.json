@@ -1,25 +1,29 @@
 {
   "name": "scss-iconify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An SCSS mixin for creating 'icons' with user defined height and width with centrally positioned content",
   "main": "_mixin.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/boov/scss-iconify.git"
   },
-  "keywords": ["iconify", "scss", "css", "mixins"],
-  "author": "Matthew Booth <matt@boov.co.uk>",
+  "scripts": {
+    "dev": "npm run test -- --watch",
+    "test": "sass .:. --no-source-map"
+  },
+  "keywords": [
+    "iconify",
+    "scss",
+    "css",
+    "mixins"
+  ],
+  "author": "Matthew Booth <matthew@boov.co.uk>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/boov/scss-iconify/issues"
   },
   "homepage": "https://github.com/boov/scss-iconify#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^3.1.0"
+    "sass": "^1.17.3"
   }
 }
